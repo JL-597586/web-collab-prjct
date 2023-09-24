@@ -1,8 +1,50 @@
 import Image from 'next/image'
+import Testpage from 'src/app/posts/page2nd'
+import Link from 'next/link';
 
 export default function Home() {
+
+function Meme () {
+
+  const mystyle = {
+    color: "white",
+    backgroundColor: "DodgerBlue",
+    padding: "10px",
+    fontFamily: "Arial"
+  };
+
+  let swag = ""
+
+  if (true) {
+    swag = "i like"
+    console.log(swag);
+  }
+  
+  if (false) {
+    console.log("i dont like");
+  }
+
+  let a = 5
+  let b = 7
+  let c = a + b
+  console.log(c);
+  return (
+    <div style={mystyle}>swag {swag}</div>
+  )
+}
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      
+      <Link href="src/app/posts/page2nd">LINK</Link>
+
+      <Testpage/>
+
+      <Meme/>
+
+      <div style={{color: "red", backgroundColor: "blue"}}>swag</div>
+
+      <div stlye="color:red;"></div>
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Get started by editing&nbsp;
